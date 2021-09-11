@@ -1,5 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
-
+import { Card, Button, Image } from "react-bootstrap";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 function App() {
@@ -29,32 +31,50 @@ function App() {
     setWeather(res.data);
   };
 
-  if (location == false) {
+  if (location === false) {
     return (
-      <Fragment>Você precisa habilitar a localização no browser o/</Fragment>
+      <Fragment>
+        Você precisa habilitar a localização no browser 😢😢o/
+      </Fragment>
     );
-  } else if (weather == false) {
+  } else if (weather === false) {
     return <Fragment>Carregando o clima...</Fragment>;
   } else {
     return (
       <Fragment>
-        <h3>
-          Clima nas suas Coordenadas ({weather["weather"][0]["description"]})
-        </h3>
-        <hr />
-        <ul>
-          <li>Temperatura atual: {weather.main.temp}°</li>
-          <li>Temperatura máxima: {weather.main.temp_max}°</li>
-          <li>Temperatura minima: {weather.main.temp_min}°</li>
-          <li>Pressão: {weather.main.pressure} hpa</li>
-          <li>Humidade: {weather.main.humidity}%</li>
-          <img
-            className="city-icon"
-            src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-            alt={weather.weather[0].description}
-          />
-          <li>{weather.weather[0].description}</li>
-        </ul>
+        <div className="App">
+          <div className="container mx-auto">
+            <Card
+              style={{ width: "18rem" }}
+              className="bg-secondary"
+              border="dark"
+              bg="Secondary"
+            >
+              <Card.Body>
+                <Card.Text>
+                  <ul className="textWeather">
+                    <li>
+                      <Image
+                        className=""
+                        src={`..//img/icons/${weather.weather[0].icon}.png`}
+                        src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
+                        alt={weather.weather[0].description}
+                        rounded
+                      />{" "}
+                    </li>
+                    <li>Clima: {weather.weather[0].description}</li>
+                    <br />
+                    <li>Temperatura atual: {weather.main.temp}°</li>
+                    <li>Temperatura máxima: {weather.main.temp_max}°</li>
+                    <li>Temperatura minima: {weather.main.temp_min}°</li>
+
+                    <li>Humidade: {weather.main.humidity}%</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
       </Fragment>
     );
   }
