@@ -43,6 +43,7 @@ function App() {
     return (
       <Fragment>
         <div className="App">
+          {/*------- Card -------*/}
           <div className="container mx-auto">
             <Card
               style={{ width: "18rem" }}
@@ -73,6 +74,7 @@ function App() {
                 </Card.Text>
               </Card.Body>
             </Card>
+            {/*------- Card -------*/}
           </div>
         </div>
       </Fragment>
