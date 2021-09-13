@@ -1,6 +1,15 @@
 <h2>Olá seja bem vindo(a)</h2>
 <p>Esse é mais um dos meus projetos, esse projeto eu fiz usando uma API, essa foi minha primeira vez usando React com uma API, a API que escolhi foi a do <code>OpenWeatherMap</code> nela é possível ver o clima atual, porem eu fiz de um jeito mais divertido, você não precisa botar onde você mora, o site já faz isso para você, assim que você da permissão, o site pega suas coordenadas e mostra o clima atual daonde você está no momento.</p>
 
+⚠️ Obs: Esse projeto foi desenvolvido totalmente por conta própria, basicamente fui botando a cara e descobrindo como que faz cada coisa, por isso, estou constantemente atualizando esse projeto, deixando ele mais bonito, tanto esteticamente na tela, como no código, usando CleanCode e outros métodos, exemplo disso e a estrutura de pastas que estarei implementando para melhorar a organização e estética do código, e também estarei aplicando coisas novas que vou aprendendo com o passar do tempo. ⚠️
+
+## 🚀 Nesse projeto foi usado
+* React 
+* Node.JS
+* Axios para buscar a API
+* A API usada no projeto foi: OpenWeatherMap API
+
+
 Caso queria baixar esse projeto, veja os pré-requisitos.
 ## 💻 Pré-requisitos
 
