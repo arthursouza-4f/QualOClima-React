@@ -21,7 +21,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 
 ## ☕ Usando o Projeto
-Caso não saiba usar o terminal, não se preocupe, os links de artigos no final do readme irão te ajudar
+<code>Caso não saiba usar o terminal, não se preocupe, os links de artigos no final do readme irão te ajudar</code>
+<br/><br/>
 Para usar o projeto, siga estas etapas:
 
 
