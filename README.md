@@ -16,6 +16,9 @@ Caso queria baixar esse projeto, veja os pré-requisitos.
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você instalou  `<Node.js>`
 * Você tem uma máquina `<Windows / Linux / Mac>`.
+* No projeto está a minha chave de acesso à API, caso não funcione, você tera que <strong>criar uma chave nova no site da OpenWeatherMap</strong>, é bem simples, só se cadastrar que eles lê liberarão uma chave.  [Site da OpenWeatherMap ](https://openweathermap.org/) 
+* ⚠️<code>A chave poderá demorar uns 15 minutos para ser ativada, por isso espere um tempo após consegui-la.</code>⚠️
+
 
 ## ☕ Usando o Projeto
 Caso não saiba usar o terminal, não se preocupe, os links de artigos no final do readme irão te ajudar
